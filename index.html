@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            font-size: 28px;
+            letter-spacing: 3px;
+            color: #6b4c3b;
+            font-style: italic;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        nav ul li:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            height: 400px;
+            background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1350&q=80') center center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px 30px;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+        .hero-text h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .hero-text p {
+            margin: 0 0 20px 0;
+            font-size: 16px;
+        }
+        .hero-text button {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .hero-text button:hover {
+            background-color: white;
+            color: black;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .product-card {
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+            background-color: #fff;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .product-image {
+            width: 100%;
+            height: 150px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+        }
+        .product-info {
+            padding: 10px;
+            text-align: center;
+        }
+        .product-name {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+        .product-price {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">bloom and grace</div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Subscription</li>
+                <li>Contact</li>
+                <li>Blog</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>A single bloom can lift the spirit and turn an ordinary day into something extraordinary.</h1>
+            <p>Discover our handcrafted bouquets and let beauty bloom in every moment.</p>
+            <button>ALL FLOWERS</button>
+        </div>
+    </section>
+    <section class="products">
+        <div class="product-card" onclick="alert('Clicked product 1')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 1</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 2')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 2</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 3')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 3</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 4')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 4</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 5')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 5</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 6')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 6</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 7')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 7</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 8')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 8</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 9')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 9</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 10')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 10</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 11')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 11</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="alert('Clicked product 12')">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <div class="product-name">Product 12</div>
+                <div class="product-price">$XX.XX</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
